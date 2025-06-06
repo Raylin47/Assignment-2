@@ -1,0 +1,38 @@
+.side_image{
+    background-image: url(https://st.depositphotos.com/1743476/2206/i/450/depositphotos_22064747-Happy-Smiling-Student.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    border: 8px solid black;
+    align-items: center;
+    align-content:center;
+    min-height: 100px;
+}
+.yes{
+    background-color: aqua;
+    height: 200px;
+    width:200px;
+    margin:10px;
+}
+header{
+    display:flex;
+    background-color: green;
+   justify-content:space-between;
+}
+nav{
+    display:flex;
+    background-color: aqua;
+    align-content:flex-start;
+    height: 50px;
+    justify-content: space-between;
+}
+a{
+   
+    background-color: brown;
+    width: 30px;
+    height: 50px;
+    
+}
+h1{
+    color: azure;
+}
