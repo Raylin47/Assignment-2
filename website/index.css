@@ -45,6 +45,7 @@ nav{
     text-decoration: none;
     color: black;
     font-family: sans-serif;
+    border-radius: 20px;
 }
 .links:hover{
     background-color:rgb(2, 104, 15) ;
@@ -89,7 +90,9 @@ h3{
 }
 footer{
     background-color:rgb(0, 94, 12) ;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    
 }
 .image{
     width: 500px;
@@ -124,16 +127,15 @@ footer{
       align-items: center;
       justify-content: center;
       gap: 1rem;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       position: relative;
     }
     .slide_content {
-        width: 100%;
-        max-width: 600px;
+        width: 800px;
         position: relative;
         overflow: hidden;
-        height: 300px;
+        height:600px;
       }
       .slide {
         position: absolute;
@@ -153,6 +155,36 @@ footer{
         opacity: 1;
         z-index: 1;
       }
+      .arrow_btn{
+        border: solid 2px black;
+        background-color: green;
+        font-size:25px;
+        text-align: center;
+      }
+      .arrow_btn:hover{
+        background-color: lightgreen;
+        transition:background 0.5s;
+      }
+      .btn{
+        display: inline-block;
+        padding: 0.6em 1.2em;
+        background: green;
+        color: white;
+        border-radius: 30px;
+        text-decoration: none;
+        width: 100px;
+        height:50px;
+      }
+      .btn:hover{
+        background-color: rgb(69, 136, 69);
+        transition: background 0.3s;
+      }
+      .Footer_bottom{
+      text-align: center;
+      }
+      .contact{
+        color: white;
+      }
 @media(max-width:768px){
 .Title{
     font-size: 6vw;
@@ -164,6 +196,10 @@ footer{
 .image{
     width: 200px;
     height:300px;
+}
+.course_slider{
+    max-width: 450px;
+    height:auto;
 }
 
 }
