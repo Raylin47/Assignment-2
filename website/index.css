@@ -117,25 +117,26 @@ footer{
 }
 .Courses{
     display:flex;
+    text-align: center;
+    align-content:center; 
     justify-content: center;
 }
 .course_text{
     font-size: 30px;
+    text-align: center;
 }
 .course_slider{
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1rem;
       max-width: 1000px;
-      margin: auto;
       position: relative;
     }
     .slide_content {
         width: 800px;
         position: relative;
         overflow: hidden;
-        height:850px;
+        height:850;
       }
       .slide {
         position: absolute;
@@ -156,14 +157,13 @@ footer{
         z-index: 1;
       }
       .arrow_btn{
-        display: flex;
-        border: solid 2px black;
-        background-color: green;
-        font-size:25px;
+          display: flex;
+        border: none;
         height: 100px;
+        background-color: green;
         align-items: center;
         text-align: center;
-        padding:auto;
+        
       }
       .arrow_btn:hover{
         background-color: lightgreen;
@@ -226,13 +226,19 @@ footer{
     max-width: 450px;
     height:auto;
 }
-
+.slide_content{
+  height: 1400px;
+}
 .Courses{
   height:auto;
+  flex-direction: column;
 }
 .logo{
   width:75px;
   height:75px;
+}
+.arrow_btn{
+  width: 100%;
 }
 
 
