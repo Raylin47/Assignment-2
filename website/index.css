@@ -7,6 +7,7 @@
     min-height: 100px;
     flex-wrap: wrap;  
     justify-content: center;
+    overflow-x: auto;
 }
 .profile{
     background-color: green;
@@ -186,7 +187,10 @@ footer{
       .contact{
         color: white;
       }
-@media(max-width:500px){
+@media(max-width:768px){
+     body {
+    margin: 0 30px; 
+  }
 .Title{
     font-size: 6vw;
 
