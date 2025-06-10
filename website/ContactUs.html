@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Слайдер контента</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f7f7f7;
+    }
+
+    .carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      max-width: 800px;
+      margin: auto;
+      position: relative;
+    }
+
+    .arrow-btn {
+      font-size: 2rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .arrow-btn:hover {
+      color: #555;
+    }
+
+    .slide-container {
+      width: 100%;
+      max-width: 600px;
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: all 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slide.active {
+      left: 0;
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .slide img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+    .btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background: #333;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  width: 50px;
+  height:50px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #555;
+}
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <button class="arrow-btn" onclick="prevSlide()">&#8592;</button>
+
+    <div class="slide-container">
+      <div class="slide active">
+        <h2>Заголовок 1</h2>
+        <p> расположен</p>
+        <a href="/page2" class="btn"> lf</a>
+        <img src="https://via.placeholder.com/400x200" alt="Картинка 1">
+      </div>
+      <div class="slide">
+        <h2>Заголовок 2</h2>
+        <p>Второй блок с другим текстом и изображением.</p>
+        <img src="https://via.placeholder.com/400x200?text=Image+2" alt="Картинка 2">
+      </div>
+      <div class="slide">
+        <h2>Заголовок 3</h2>
+        <p>Третий блок, например, с описанием продукта.</p>
+        <img src="https://via.placeholder.com/400x200?text=Image+3" alt="Картинка 3">
+      </div>
+    </div>
+
+    <button class="arrow-btn" onclick="nextSlide()">&#8594;</button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    function prevSlide() {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    }
+  </script>
+</body>
+</html>

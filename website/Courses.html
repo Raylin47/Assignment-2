@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Картинка рядом с текстом</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .container img {
+      width: 800px; /* Размер картинки */
+      margin-right: 20px; /* Отступ между картинкой и текстом */
+    }
+   
+
+    .text {
+      font-size: 18px;
+    }
+     @media(max-width=768px){
+        .container img{
+            width: 600px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://st.depositphotos.com/1743476/2206/i/450/depositphotos_22064747-Happy-Smiling-Student.jpg" alt="Пример изображения">
+    <div class="text">
+      <h2>Заголовок</h2>
+      <p>Это пример текста, который расположен рядом с картинкой. Всё выглядит аккуратно благодаря flexbox.</p>
+    </div>
+  </div>
+</body>
+</html>
