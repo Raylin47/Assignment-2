@@ -11,8 +11,10 @@
 }
 .profile{
     background-color: green;
-    height: 400px;
-    width:500px;
+    height: auto; 
+    min-height: 400px;
+    width: auto;
+    min-width:500px;
     margin:10px;
     color: white;
 
