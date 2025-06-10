@@ -27,6 +27,7 @@ nav{
     background-color: rgb(0, 94, 12);
     align-content:flex-start;
     height: auto;
+    width: auto;
     justify-content:flex-start;
     display:flex;
   
@@ -36,9 +37,9 @@ nav{
     align-content: center;
     border: 3px solid black;
     background-color: rgb(77, 165, 42);
-    width: 140px;
+    width:auto ;
     overflow-wrap: break-word;
-    height: 50px;
+    height: 70;
     font-size: 20px;    
     text-decoration: none;
     color: black;
@@ -159,7 +160,10 @@ footer{
         border: solid 2px black;
         background-color: green;
         font-size:25px;
+        height: 100px;
+        align-items: center;
         text-align: center;
+        padding:auto;
       }
       .arrow_btn:hover{
         background-color: lightgreen;
@@ -206,8 +210,13 @@ footer{
   .side_image {
     justify-content: flex-start;
   }
+  nav{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 .links{
-    height: 65px;
+    width: auto;
+    height: auto;
 }
 .image{
     width: 200px;
@@ -220,6 +229,10 @@ footer{
 
 .Courses{
   height:auto;
+}
+.logo{
+  width:75px;
+  height:75px;
 }
 
 
