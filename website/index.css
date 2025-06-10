@@ -195,6 +195,14 @@ footer{
     font-size: 6vw;
 
 }
+  .profile {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+  .side_image {
+    justify-content: flex-start;
+  }
 .links{
     height: 65px;
 }
