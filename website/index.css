@@ -85,6 +85,7 @@ h3{
 }
 .profile_text{
     text-decoration: none;
+    height: auto;
     overflow-wrap: break-word;
     font-size: 20px;
 }
@@ -185,7 +186,7 @@ footer{
       .contact{
         color: white;
       }
-@media(max-width:768px){
+@media(max-width:500px){
 .Title{
     font-size: 6vw;
 
@@ -201,5 +202,6 @@ footer{
     max-width: 450px;
     height:auto;
 }
+
 
 }
