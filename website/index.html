@@ -14,21 +14,119 @@
             
     </Header>
     <nav>
-<a href="https://www.oaklands.ac.uk/">Homepage</a>
-<a>asaf</a>
-<a>asf</a>
-<a>asf</a>
+<a href="https://www.oaklands.ac.uk/" class = "links">Homepage</a>
+<a class = "links" href="https://www.oaklands.ac.uk/oaklands-college/courses/">Explore more courses</a>
+<a class = "links" href="https://www.oaklands.ac.uk/student-experience/">Student experience</a>
+<a class = "links" href="https://www.oaklands.ac.uk/news-events/open-events/">Open events</a>
             </nav>
 
-<p>oaklands provides many things</p>
-<div> </div>
+
+<div class="staff"><p >Meet our oaklands college computing staff!</p> </div>
 <div> 
     <div class="side_image">
-        <div class="yes">hello</div>
-        <div class="yes">hello</div>
-        <div class="yes">hello</div>
-    </div><h3>Why to choose oaklands?</h3>
+        <div class="profile">
+            <img src="Colin.jpg" alt="" class="avatar"><h2>Colin Wright</h2>
+            <p class ="profile_text"></p>
+        </div>
+        <div class="profile">
+            <img src="Raj.jpg" alt="" class="avatar"><h2>Raj Singh</h2>
+            <p class ="profile_text"></p>
+        </div>
+        <div class="profile">
+            <img src="Savi.jpg" alt="" class="avatar"><h2>Savithri Praveenkumar</h2>
+            <p class ="profile_text"></p>
+        </div>
 </div>
-<div> </div>
-        <footer></footer>
+    <h3>Why to choose oaklands college?</h3>
+    
+    <br>
+    <br>
+    <div class="box">
+        <div class="text"> 
+       <h4>Variety of different courses</h4>
+       <p>The field of computing is vast and continuously evolving, offering a wide range of courses tailored to different interests and career paths. Whether you are interested in software development, data analysis, cybersecurity, or artificial intelligence, there is a computing course designed to equip you with the relevant skills and knowledge.
+
+        <br><br>Introduction to Computer Science:<br><br>
+       This foundational course covers the basics of programming, algorithms, and computational thinking. It’s ideal for beginners who want to understand how computers work and how to write simple programs.
+       <br><br>
+        Software Development and Programming:<br><br>
+        Focused on coding skills, these courses teach various programming languages like Python, Java, C++, and JavaScript. They often include practical projects to build real-world applications.
+        <br><br>
+       Data Science and Analytics:<br><br>
+         courses delve into data collection, processing, and interpretation. Students learn tools like Python, R, SQL, and software for statistical analysis, preparing them for careers in big data and business intelligence.
+         <br><br>
+        Cybersecurity:<br><br>
+        With the growing importance of digital security, cybersecurity courses cover topics like network security, ethical hacking, cryptography, and risk management to protect systems from cyber threats.
+        <br><br>
+        Artificial Intelligence and Machine Learning: <br><br>
+        These advanced courses explore concepts such as neural networks, natural language processing, and computer vision. Students develop skills to create intelligent systems that can learn and adapt.
+        <br><br>
+        Cloud Computing:<br><br>
+        Courses in this area teach about cloud infrastructure, services like AWS, Azure, and Google Cloud, and how to deploy and manage applications in the cloud environment.
+        <br><br>
+        Computer Networks:<br><br>
+        Covering the design and management of communication systems, these courses explain protocols, hardware, and network security, essential for building reliable networks.
+        <br><br>
+        Human-Computer Interaction (HCI):<br><br>
+        These courses focus on designing intuitive interfaces and improving user experience, combining principles of psychology, design, and computing.
+        <br><br>
+        Game Development:<br><br>
+        A specialized track that teaches programming, graphic design, and storytelling to create interactive games and simulations.
+        <br><br>
+        Each computing course offers unique opportunities to develop skills that are highly valued across industries, making computing education a versatile and future-proof choice.
+        </div>
+    </div>
+    
+   <div class="Courses">
+    <div class ="course_text">
+    <p>Apply to any of the computing courses now!</p>
+    <div class="course_slider">
+        <button class="arrow_btn" onclick="prevSlide()">&#8592;</button>
+    <div class="slide_content">
+          <div class="slide_active">
+               <h5>hi</h5>
+               <p>yes</p>
+         </div>
+         <div class="slide">
+            <h5>h</h5>
+            <p>yes</p>
+         </div>
+         <div class="slide">
+            <h5></h5>
+            <p>yes</p>
+         </div>
+         <div class="slide">
+            <h5>hi</h5>
+            <p>yes</p>
+         </div>
+         
+    </div>
+        <button class="arrow_btn" onclick="nextSlide()">&#8594;</button>
+        <script>
+            const slides = document.querySelectorAll('.slide');
+            let current = 0;
+        
+            function showSlide(index) {
+              slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+              });
+            }
+        
+            function nextSlide() {
+              current = (current + 1) % slides.length;
+              showSlide(current);
+            }
+        
+            function prevSlide() {
+              current = (current - 1 + slides.length) % slides.length;
+              showSlide(current);
+            }
+          </script>
+    
+   </div>
+   </div>
+</div>
+        <footer><h1>Oaklands college</h1>
+        <a href="mailto:ContactCentre@oaklands.ac.uk" class = "contact">Contact us with your email!</a>
+        </footer>
     </body>
